@@ -1,0 +1,17 @@
+.crew-wrap {
+    position: relative;
+    text-align: center;
+    display: block;
+    img {
+        width: $crew-width !important;
+        height: $crew-width; 
+        border-radius:$crew-width; 
+    }
+    span {
+        color: $crew-post-title-color;
+        margin-top: 10px; 
+        display: block;
+        font-weight: 500;
+        font-size: $language-post-title-size; 
+    }
+}

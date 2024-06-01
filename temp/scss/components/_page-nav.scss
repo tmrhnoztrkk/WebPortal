@@ -1,0 +1,40 @@
+.page-nav {
+    padding-top: $pagenav-padding;
+    padding-bottom: $pagenav-padding;
+    @include respond("md") {
+        padding-top: 50px; 
+        padding-bottom: 50px; 
+    }
+    span {
+        color: #aaa;
+        font-size: $pagenav-post-subtitle-size; 
+    }
+    h2 {
+        font-size: $pagenav-post-title-size; 
+        font-weight: 700;
+        color: $pagenav-post-title-color;
+        @include respond("lg") {
+            font-size: 36px;
+        }
+        @include respond("md") {
+            font-size: 28px; 
+        }
+        @include respond("sm") {
+            font-size: 25px;
+            margin-bottom: 10px !important;     
+        }
+    }
+    p {
+        font-size: $pagenav-post-subtitle-size; 
+        line-height: 28px; 
+        color: $pagenav-post-subtitle-color;
+        padding: 0 10%;
+        @include respond("xxl") {
+            padding: 0; 
+        }
+        @include respond("lg") {
+            font-size: 12px;
+            line-height: 22px; 
+        }
+    }
+}

@@ -1,0 +1,173 @@
+.header-wrapper {
+    padding: $header-padding 0; 
+    background-color: $header-bg;
+    @include respond("lg") {
+        padding: 15px; 
+    }
+    .logo {
+        float: left;
+        font-size: 26px; 
+        font-weight: 700;
+        color: var(--f7-theme-color);
+        line-height: 20px; 
+        position: relative;
+        top:-5px;
+        .dark {
+            display: none;
+        }
+        img {max-height: 25px; }
+        i {
+            margin-right: 0px; 
+            font-size: 30px; 
+            position: relative;
+            top:5px;
+            left:-0px;
+        }
+    }
+    .bttn {
+        background-color: #ffe4db;
+        width: 100px; 
+        height: 40px;
+        line-height: 40px; 
+        border-radius:5px; 
+        color: #f27b51;
+        font-size: 14px;
+        font-weight: 400; 
+        display: inline-block;
+        text-align: center;
+    }
+    .nav-menu {
+        display: inline-block;
+        float: left;
+        margin-left: 40px; 
+        margin-top: 3px; 
+        @include respond("lg")  {
+            margin-left: 0; width: 100%; display: block;
+        }
+        li {
+            padding: 0 20px; 
+            display: inline-block;
+            float: left;
+            @include respond("lg")  {
+                padding: 15px 0; text-align: left; width: 95%; 
+            }
+            a {
+                font-size: $header-menu-font-size; 
+                line-height: 22px; 
+                font-weight: 400;
+                color: $header-menu-font-color; 
+                @include respond("lg")  { 
+                    padding: 0;
+                }
+            }
+        }
+        &.style2 li a {color: #111; font-size: 15px; }
+        &.style2 li {float:none;}
+        &.style2 {width: 100%;}
+    }
+    .search-div {
+        float: right;
+        margin-right: 15px; 
+        width: $header-search-width; 
+        height: $header-search-height; 
+        border-radius:$header-search-border-radius; 
+        border:1px $header-search-border-color solid;
+        position: relative; 
+        @include respond("xxl") {
+            width: 200px;  
+        }
+        &:after {
+            font-family: 'themify';
+            content: "\e610";
+            position: absolute;
+            right:15px; 
+            top:4px;
+            color: #aaa;
+
+        }
+        input {
+            border:0; 
+            background-color: transparent;
+            outline: none;
+            line-height: 39px; 
+            width: 100%;
+            padding: 0 15px; 
+            font-size: 14px; 
+            color: #999;
+        }
+
+    }
+    .user-avater {
+        position: relative; 
+        float: right;
+        width: $header-avater-radius; 
+        height: $header-avater-radius; 
+        display: inline-block;
+        border-radius:$header-avater-radius;
+        img {
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            z-index: 11;
+            border-radius:25px; 
+        }
+        &:hover .user-menu {display: block;}
+    }
+    .user-menu {
+        display: none;
+        min-width: 160px; 
+        border: 1px solid rgba(0,0,0, 0.12);
+        right:0;
+        top:100%;
+        background-color: #fff;
+        border-radius:5px; 
+        position: absolute;
+        z-index: 10;
+        margin-top: 10px; 
+        ul {
+            padding: 5px 0;
+        }
+        &:before {
+            top: -10px;
+            background-color: #fff;
+            border-color: transparent transparent rgba(0,0,0, 0.16) transparent;
+            border-width: 10px;
+            content: '';
+            display: block;
+            position: absolute;
+            right: 8px;
+            margin-top: -10px;
+            width: 0;
+            height: 0;
+            z-index: 30;
+            border-style: solid;
+        }
+        &:after {
+            top: -9px;
+            border-color: transparent transparent #fff transparent;
+            border-width: 10px;
+            content: '';
+            display: block;
+            position: absolute;
+            right: 8px;
+            margin-top: -10px;
+            width: 0;
+            height: 0;
+            z-index: 30;
+            border-style: solid;
+        }
+        a {
+            display: block;
+            font-weight: 400;
+            color: $header-menu-font-color;
+            padding: 10px 15px;
+            font-size: 14px;
+            i {
+                margin-right: 10px; 
+                display: inline-block;
+                font-size: 16px; 
+            }
+        }
+    }
+}
+

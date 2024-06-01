@@ -1,0 +1,183 @@
+.member-ul {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin-top: 40px; 
+
+    li {
+        width: 33.3%;
+        float: left;
+        text-align: center;
+        position: relative;
+        &:first-child {
+            @include respond("sm") {
+                text-align: left;
+            }
+        }
+        &:last-child {
+            @include respond("sm") {
+                text-align: right;
+            }
+        }
+        &:nth-child(2n) {
+            &:after,
+            &:before {
+                width: 100px; 
+                height: 2px; 
+                background-color: #ddd;
+                content: '';
+                position: absolute;
+                top:28px;
+                left:-25%;
+                @include respond("sm") {
+                    width: 30px; 
+                }
+            }
+            &:after {right:-25%; left:auto;}
+        }
+        &.active a span {color: #fff; background-color:var(--f7-theme-color); }
+        &.active a b {color: #222;}
+        a {
+            span {
+                letter-spacing: 2px; 
+                width: 60px;
+                height: 60px;
+                background-color: #eee;
+                border-radius:50px; 
+                text-align: center;
+                color: #111;
+                font-size: 16px;
+                font-weight: 600;
+                display: inline-block;
+                text-align: center;
+                line-height: 60px; 
+            }
+            b {
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-size: 13px;
+                color: #999;
+                display: block;
+                margin-top: 15px; 
+                text-transform: uppercase;
+                @include respond("sm") {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.price-wrap {
+    position: relative;
+    width: 100%;
+    float: left;
+    
+    .left-price {
+        float: left;
+        position: relative;
+        text-align: center;
+        width: 30%;
+        @include respond("sm") {
+            width: 100%;
+            margin-bottom: 25px; 
+        }
+        h2 {
+            font-size: 50px;
+            font-weight: 300; 
+            color: #111;
+            margin:5px 0 0;
+            i {
+                font-style: normal;
+                font-size: 28px; 
+                vertical-align: super;
+            } 
+        }
+        h4 {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #999;
+            text-transform: uppercase;
+        }
+    }
+    .middle-price {
+        float: left;
+        position: relative;
+        text-align: center; 
+        width: 45%;
+        @include respond("sm") {
+            width: 100%;
+        }
+        &:after {
+            width: 2px; 
+            height: 60px;
+            background-color: #eee;
+            content: '';
+            position: absolute;
+            left:0;
+            top:30%;
+            @include respond("sm") {
+                display: none;
+            }
+        }
+        
+        h6 {
+            font-size: 14px; 
+            color: #666;
+            line-height: 38px;
+            font-weight: 400; 
+            margin-bottom: 0; 
+            i {
+                width: 18px; 
+                height: 18px; 
+                border-radius:20px; 
+                display: inline-block;
+                background-color: green;
+                color: #fff;
+                font-size: 12px; 
+                margin-right: 10px; 
+                position: relative;
+                top:-2px; 
+                text-align: center;
+                line-height: 18px; 
+            } 
+        }
+    }
+    .right-price {
+        float: left;
+        position: relative;
+        text-align: center;
+        width: 25%;
+        @include respond("sm") {
+            width: 100%;
+        }
+        .btn {
+            margin-top: 50px; 
+            width: 140px;
+            height: 45px;
+            background-color: var(--f7-theme-color);
+            border-radius:5px;
+            color: #fff;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600; 
+            letter-spacing: 1px; 
+            line-height: 45px; 
+            padding: 0; 
+            @include respond("sm") {
+                margin-top: 25px;
+            }
+        }
+        span {
+            display: block;
+            font-size: 11px;
+            width: 100%;
+            line-height: 26px; 
+            font-style: italic;
+            font-weight: 400; 
+            color: #999;
+
+        }
+    }    
+}

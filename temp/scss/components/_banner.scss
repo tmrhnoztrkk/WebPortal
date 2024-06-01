@@ -1,0 +1,223 @@
+.banner-wrapper {
+    .slide-wrapper {
+        .owl-stage-outer {
+            overflow: hidden;
+        }    
+    }
+    .owl-stage-outer {
+        overflow: visible;
+        .owl-item {
+            opacity: 0.4;
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+    .owl-dots {
+        position: absolute;
+        margin-top: 0;
+        bottom:10px;
+        width: 100%;
+        .owl-dot span {margin:4px; }
+        .owl-dot.active span {background-color: var(--f7-theme-color);}
+    }
+    .banner-wrap {
+        border-radius:$banner-border-radius;
+        overflow: hidden;
+        float: left;
+        width: 100%;
+        position: relative;
+        background-color: #211813;
+        height: $banner-height; 
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        @include respond("xl") {
+            height: 400px; 
+        }
+        @include respond("sm") {
+            height: 250px; 
+        }
+    }
+    .left-wrap {
+        flex: 0 0 45%;
+        max-width: 45%;
+        position: relative;
+        padding: 0 0 0 50px; 
+        @include respond("lg") {
+            padding:  0 0 0 15px; 
+        }
+        @include respond("sm") {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 3;
+            width: 100%;
+            background:linear-gradient(to top, #211813, transparent); 
+        }
+        
+        h2 {
+            font-size: $banner-title-font-size;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $banner-title-font-color;
+            font-weight: 700; 
+            line-height: 1.1; 
+
+            @include respond("xl") {
+                font-size: 50px; 
+            }
+            @include respond("lg") {
+                font-size: 36px;
+                margin-top: 10px; 
+            }
+            @include respond("sm") {
+                font-size: 26px;
+                margin-top: 10px; 
+            }
+        }
+        p {
+            margin-top: 10px; 
+            font-size:  $banner-subtitle-font-size; 
+            font-weight: 400; 
+            color: $banner-subtitle-font-color;
+            line-height: 28px; 
+            @include respond("xl") {
+                font-size: 13px;
+                line-height: 24px; 
+            }
+            @include respond("lg") {
+                display: none; 
+            }
+        }
+        a {
+            @include respond("lg") {
+                margin-top: 10px; 
+            }
+        }
+        .tag {
+            font-size: $banner-tag-font-size; 
+            color: $banner-tag-font-color;
+            margin-right: 15px; 
+            @include respond("xl") {
+                font-size: 12px; 
+            }
+            b {
+                color: #fff;
+            }
+        }
+        .rnd {
+            border:1px #ddd solid;
+            line-height: 20px;
+            padding: 0 10px; 
+            border-radius:5px; 
+            font-size: 10px; 
+            font-weight:    500;
+            display: inline-block;
+            color: #fff;
+        }
+        .btn-lg {
+            color: $banner-btn-font-color;
+            background-color: var(--f7-theme-color);
+            min-width: $banner-btn-width;
+            line-height: $banner-btn-height; 
+            font-size: $banner-btn-font-size;
+            font-weight: 600;
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            @include respond("xl") {
+                min-width: 150px;
+                font-size: 10px;
+                letter-spacing: 1px;
+                line-height: 30px; 
+            }
+
+            img {
+                width: 20px;
+                margin-right: 10px; 
+                position: relative;
+                top:-2px; 
+                display: inline-block;
+            }
+        }
+        .icon-bttn {
+            margin-left: 20px; 
+            line-height: 58px;
+            display: inline-block;  
+            position: relative;
+            @include respond("sm") {
+                line-height: 30px;
+                right:20px;
+                position: absolute;
+                bottom:50px;    
+            }
+            &:hover {
+                .share-icons {display: block;}
+            }
+            i {
+                font-size: 20px; 
+            }
+            .share-icons {
+                display: none;
+                background-color: #eee;
+                border-radius: 4px;
+                position: absolute;
+                width: 130px; 
+                right:-130px; 
+                margin-left: 30px; 
+                top:0;
+                height: 58px; 
+                padding: 5px 10px;  
+                i {
+                    color: #999;
+                    margin-right:15px;
+                    font-size: 22px;  
+                }
+            }
+        }
+    }
+    .right-wrap {
+        flex: 0 0 25%;
+        max-width: 55%;
+        position: relative;
+        height: 100%;
+        background-size: cover;
+        @include respond("sm") {
+            flex: 0 0 100%;    max-width: 100%;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left:0;
+            top:0;
+            width: 60%;
+            height: 100%;
+            background:linear-gradient(to right, #211813, transparent);
+        }
+        video {
+           height: 500px; 
+           @include respond("sm") {
+            height: 250px; 
+           }
+        }
+    }
+    .slide-wrapper {
+        padding:0 50px 30px; 
+        background-color: #211813;
+        border-radius:0 0 7px 7px;
+        position: relative;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            left:0;
+            top:-50px;
+            width: 100%;
+            height: 50px;
+            background:linear-gradient(to top, #211813, transparent);
+        }
+    }
+}

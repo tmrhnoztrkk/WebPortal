@@ -1,0 +1,130 @@
+
+/*-----------------------------------------------------------
+    Theme Name: Starapp
+    Theme URI: http://html.aonecolor.com/Starapp/
+    Description: Mobile Template
+    Version: 1.0.0
+-------------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+    Table of Content: 
+
+    
+    2. Bootstrap CSS
+    1. Abstract
+    3. Base
+    4. Component
+    5. Pages
+    7. Header
+    8. Footer
+    
+    
+    
+*/
+@import "./abstract/abstract";
+@import "./../vendor/bootstrap/scss/bootstrap.scss";
+@import "./../vendor/owl-carousel/css/owl.carousel.min.css";
+@import "./../vendor/owl-carousel/css/owl.theme.default.css";
+
+@import "./base/base";
+@import "./components/components";
+
+
+body {font-family: "Montserrat", sans-serif;}
+
+.search-wrapper {
+    padding: 100px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    @include respond("lg") {
+        padding: 50px 15px; 
+    }
+}
+
+
+
+
+.navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    height: 40px; 
+    @include respond("lg") {
+        display: inline-block;
+    }
+
+}
+
+.navbar-toggler-icon {
+    width: 27px; 
+    height: 2px; 
+    background-color: #999;
+    position: relative;
+    top:-2px;
+    &:after {
+        content: '';
+        width: 27px; 
+        height: 2px; 
+        background-color: #999;
+        position: absolute;
+        top:-8px;
+        left:0;
+    }
+    &:before {
+        content: '';
+        width: 27px; 
+        height: 2px; 
+        background-color: #999;
+        position: absolute;
+        bottom:-8px;
+        left:0;
+    }
+    
+}
+.search-wrap-slide {
+    .owl-nav {display: none;}
+}
+
+ 
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .md-mb25 {
+        margin-bottom: 25px; 
+    }
+    .footer-wrapper p {
+        width: 100%;
+    }
+    .navbar-nav > li {border-bottom: 1px solid #E1E1F0;margin: 0 15px;padding: 7px 15px; display: block; width: 100%; padding:  20px; }
+    .header-wrapper .user-avater,
+    .header-wrapper .search-div,
+    .header-wrapper .bttn {display: none; }
+    .header-wrapper.posfixed {padding:  15px; position: fixed; top:0; left:0; width: 100%; z-index: 100; background-color: #fff; }
+}
+
+
+@media (max-width: 768px) {
+    .middle-footer .col-lg-2 {margin-bottom: 25px;  }
+    .owl-theme .owl-nav.disabled + .owl-dots {bottom:50px; }
+    .pt150 {padding-top: 70px; }
+    .col-xs-6 {        flex: 0 0 50%;        max-width: 50%;    }
+}
+@media (max-width: 576px) {
+    .banner-wrapper .slide-wrapper,
+    .slide-wrapper .slide-one .slide-content .tag,
+    .slide-wrapper .slide-one .slide-content p,
+    .banner-wrapper .left-wrap a {display: none;  }
+
+    .owl-nav {top:-63px; right: 100px;}
+    .slide-wrapper .slide-slider-full,
+    .category-slider,
+    .slide-wrapper .slide-slider {width: 130%;}
+    .banner-wrapper .left-wrap div.icon-bttn {right: 25%; }
+    .banner-wrapper .owl-dots{display: none; }
+
+}

@@ -1,0 +1,169 @@
+
+.theme-dark {
+    background-color: #1a2236;
+    .app-content {
+    	background-color: #1a2236;
+    	&:before {
+    		background-color: rgba(0, 0, 0, 0.9);
+    	}
+    }
+    .card {
+    	background-color: #293145 !important;
+    }
+    .app-footer {
+    	background-color: #293145 !important;
+    	border-top: 0;
+    	i {
+    		color: #fff;
+    	}	
+    }
+    .app-header .logo svg path {
+    	fill: #fff;
+    }
+    .app-header .menu-icon i {
+    	color: #fff;
+    }
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {color: #fff !important;}
+} 
+
+.color-theme-red {
+    ---theme-color: #ff3b30;
+    ---theme-color-rgb: 255, 59, 48;
+    ---theme-color-shade: #ff1407;
+    ---theme-color-tint: #ff6259
+}
+
+.color-theme-green {
+    ---theme-color: #4cd964;
+    ---theme-color-rgb: 76, 217, 100;
+    ---theme-color-shade: #2cd048;
+    ---theme-color-tint: #6ee081
+}
+
+.color-theme-blue {
+    ---theme-color: #05f;
+    ---theme-color-rgb: 33, 150, 243;
+    ---theme-color-shade: #09f;
+    ---theme-color-tint: #1E74FD;
+}
+
+.color-theme-pink {
+    ---theme-color: #ff2d55;
+    ---theme-color-rgb: 255, 45, 85;
+    ---theme-color-shade: #ff0434;
+    ---theme-color-tint: #ff5676
+}
+
+.color-theme-yellow {
+    ---theme-color: #ffcc00;
+    ---theme-color-rgb: 255, 204, 0;
+    ---theme-color-shade: #d6ab00;
+    ---theme-color-tint: #ffd429
+}
+
+.color-theme-orange {
+    ---theme-color: #ff9500;
+    ---theme-color-rgb: 255, 149, 0;
+    ---theme-color-shade: #d67d00;
+    ---theme-color-tint: #ffa629
+}
+
+.color-theme-purple {
+    ---theme-color: #9c27b0;
+    ---theme-color-rgb: 156, 39, 176;
+    ---theme-color-shade: #7e208f;
+    ---theme-color-tint: #b92fd1
+}
+
+.color-theme-deeppurple {
+    ---theme-color: #673ab7;
+    ---theme-color-rgb: 103, 58, 183;
+    ---theme-color-shade: #563098;
+    ---theme-color-tint: #7c52c8
+}
+
+.color-theme-lightblue {
+    ---theme-color: #5ac8fa;
+    ---theme-color-rgb: 90, 200, 250;
+    ---theme-color-shade: #32bbf9;
+    ---theme-color-tint: #82d5fb
+}
+
+.color-theme-teal {
+    ---theme-color: #009688;
+    ---theme-color-rgb: 0, 150, 136;
+    ---theme-color-shade: #006d63;
+    ---theme-color-tint: #00bfad
+}
+
+.color-theme-lime {
+    ---theme-color: #cddc39;
+    ---theme-color-rgb: 205, 220, 57;
+    ---theme-color-shade: #bac923;
+    ---theme-color-tint: #d6e25c
+}
+
+.color-theme-deeporange {
+    ---theme-color: #ff6b22;
+    ---theme-color-rgb: 255, 107, 34;
+    ---theme-color-shade: #f85200;
+    ---theme-color-tint: #ff864b
+}
+
+.color-theme-gray {
+    ---theme-color: #8e8e93;
+    ---theme-color-rgb: 142, 142, 147;
+    ---theme-color-shade: #79797f;
+    ---theme-color-tint: #a3a3a7
+}
+
+.color-theme-white {
+    ---theme-color: #ffffff;
+    ---theme-color-rgb: 255, 255, 255;
+    ---theme-color-shade: #ebebeb;
+    ---theme-color-tint: #ffffff
+}
+
+.color-theme-black {
+    ---theme-color: #000000;
+    ---theme-color-rgb: 0, 0, 0;
+    ---theme-color-shade: #000000;
+    ---theme-color-tint: #141414
+}
+
+.color-theme-brown {
+    ---theme-color: #5d463d;
+    ---theme-color-rgb: 255, 107, 34;
+    ---theme-color-shade: #5d463d;
+    ---theme-color-tint: #5d463d
+}
+
+.color-theme-darkgreen {
+    ---theme-color: #228B22;
+    ---theme-color-rgb: 142, 142, 147;
+    ---theme-color-shade: #79797f;
+    ---theme-color-tint: #a3a3a7
+}
+
+.color-theme-deeppink {
+    ---theme-color: #12baaf;
+    ---theme-color-rgb: 255, 255, 255;
+    ---theme-color-shade: #6ae2da;
+    ---theme-color-tint: #6ae2da
+}
+
+.color-theme-darkorchid {
+    ---theme-color: #9932cc;
+    ---theme-color-rgb: 0, 0, 0;
+    ---theme-color-shade: #000000;
+    ---theme-color-tint: #141414
+}
+
+.inter-font {font-family: 'Inter', sans-serif;}
+.mont-font {font-family: 'Montserrat', sans-serif;}
+.lato-font {font-family: 'Lato', sans-serif;}
+.dm-font {font-family: 'DM Serif Display', serif; }
+.play-font {font-family: 'Playfair Display', serif;}
+
+	
+	

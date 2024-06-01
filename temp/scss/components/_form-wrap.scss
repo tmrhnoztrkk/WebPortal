@@ -1,0 +1,126 @@
+.form-wrapper {
+    min-height: calc(100vh - 90px);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.form-div {
+    overflow: hidden;
+    padding: 40px;
+    box-shadow: 0 20px 61px rgba(65, 62, 101, 0.14);
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    h2 {
+        font-size: 42px; 
+        font-weight: 700;
+        color: #111;
+        @include respond("sm") {
+            font-size: 36px; 
+        }
+    }
+    p {
+        font-size: 14px; 
+        line-height: 20px; 
+        color: #666;
+        @include respond("sm") {
+            font-size: 14px;
+        }
+    }
+    .form-control {
+        padding-left: 28px;
+        margin-bottom: 20px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: -0.56px;
+        height: 65px;
+        border-radius: 10px;
+        border: 1px solid #eae9f2;
+        background-color: #ffffff;
+        @include respond("sm") {
+            line-height: 55px;
+            height: 55px;
+            border-radius: 5px;
+            padding-left: 15px; 
+        } 
+    }
+
+    .form-check-label {
+        padding-top: 5px;
+        margin-bottom: 20px;
+    }
+    label {
+        display: -webkit-box;
+        display: flex;
+        input:checked{
+        ~ .checkbox{
+            background-color: var(--f7-theme-color);
+            border:0; 
+          &::before{
+            content: "\e64c";
+            font-family: 'themify';
+            color: #fff;
+            font-size: 16px;             
+          }
+        }
+      }
+        p {
+            color: #696871;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+            margin-bottom: 0;
+            a {font-weight: 500; color: #000;}
+        }
+    }
+    .checkbox {
+        position: relative;
+        line-height: 1;
+        top: -2px;
+        margin-right: 8px;
+        min-height: 20px;
+        min-width: 20px;
+        cursor: pointer;
+        border:1px #ddd solid;
+        border-radius:3px;
+    }
+    .form-btn {
+        height: 60px;
+        border-radius: 7px;
+        background-color: var(--f7-theme-color);
+        width: 100%;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1px; 
+        text-transform: uppercase; 
+        border:0;
+        line-height: 60px;
+        @include respond("sm") {
+            line-height: 55px;
+            height: 55px;
+            border-radius: 5px;
+            padding-left: 15px; 
+        } 
+    }
+    .collapse-bg {
+        background-color: var(--f7-theme-color)
+    }
+    .sign-up-text {
+        color: #696871;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+::-webkit-input-placeholder {  font-weight: 400; letter-spacing: 0.4px; color: #aaa !important;}
+::-moz-placeholder {  font-weight: 400; letter-spacing: 0.4px; color: #aaa !important;}
+:-ms-input-placeholder {  font-weight: 400; letter-spacing: 0.4px; color: #aaa !important;}
+:-moz-placeholder {  font-weight: 400; letter-spacing: 0.4px; color: #aaa !important;}

@@ -1,0 +1,17 @@
+.category-wrap {
+    display: block;
+    text-align: center;
+    width:  100%;
+    margin-bottom: 15px; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    background-position:center center; 
+    border-radius:$language-border-radius; 
+    overflow: hidden;
+    span {
+        font-size: $language-post-title-size; 
+        font-weight: 600; 
+        color: $language-post-title-color;
+        letter-spacing: 1px; 
+        line-height: $language-height; 
+    }
+}
